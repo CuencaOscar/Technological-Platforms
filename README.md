@@ -81,6 +81,10 @@ Here are some screenshots of the application:
    ![No Data Placeholder](image/no-data-placeholder.png)
 
 
+## Database Schema
+
+You can download the SQL file for the database schema [here](db_streaming.sql).
+
 
 ## License
 
