@@ -52,23 +52,27 @@ The project has the following dependencies:
 
 Here are some screenshots of the application:
 
-1. **Homepage**: ![Homepage](path/to/homepage-screenshot.png)
-   *Brief description or context of the screenshot.*
+1. **Homepage**: ![Homepage](image/homepage-screenshot.png)
+   *Displays the homepage of the application with a featured image and cards for each entity. Users can click on a card to access the dedicated CRUD page for that entity.*
 
-2. **Platforms CRUD**: ![Platforms CRUD](path/to/platforms-crud-screenshot.png)
-   *Brief description or context of the screenshot.*
+2. **Platforms CRUD**: ![Platforms CRUD](image/platformpage-screenshot.png)
+   *Shows the CRUD page for managing platforms. It lists all the available platforms and provides options to create, update, and delete platforms. The table displays the platform's ID, name, and other relevant information. The Edit and Delete buttons allow users to modify or remove platforms from the database.*
 
-3. **Directors CRUD**: ![Directors CRUD](path/to/directors-crud-screenshot.png)
-   *Brief description or context of the screenshot.*
+3. **Directors CRUD**: ![Directors CRUD](image/directorpage-screenshot.png)
+   *Shows the CRUD page for managing directors. It displays a list of directors with their names, last names, date of birth, nationality, and other details. Users can perform actions such as creating new directors, updating existing ones, and deleting directors. The Edit and Delete buttons are provided for each director's entry.*
 
-4. **Actors CRUD**: ![Actors CRUD](path/to/actors-crud-screenshot.png)
-   *Brief description or context of the screenshot.*
+4. **Actors CRUD**: ![Actors CRUD](image/actorpage-screenshot.png)
+   *Displays the CRUD page for managing actors. It presents a table with actors' information, including their names, last names, date of birth, nationality, and other relevant details. Users can create new actors, update existing ones, and delete actors using the provided Edit and Delete buttons.*
 
-5. **Languages CRUD**: ![Languages CRUD](path/to/languages-crud-screenshot.png)
-   *Brief description or context of the screenshot.*
+5. **Languages CRUD**: ![Languages CRUD](image/languagepage-screenshot.png)
+   *Represents the CRUD page for managing languages. It shows a list of languages with their names, ISO codes, and other details. Users can perform operations such as creating new languages, updating existing ones, and deleting languages. The Edit and Delete buttons are available for each language entry.*
 
-6. **Series CRUD**: ![Series CRUD](path/to/series-crud-screenshot.png)
-   *Brief description or context of the screenshot.*
+6. **Series CRUD**: ![Series CRUD](image/seriepage-screenshot.png)
+   *Illustrates the CRUD page for managing series. It presents a table with series titles, descriptions, and other relevant information. Users can create new series, update existing ones, and delete series using the provided Edit and Delete buttons. Additionally, the page allows users to manage the many-to-many relationships between series and other entities, such as actors, directors, platforms, audio languages, and subtitle languages.*
+
+7. **No Data Placeholder**: ![No Data Placeholder](image/no-data-placeholder.png)
+   *Shows an image indicating that there is no data available for the table. This image is displayed when the table is empty or when there are no records to display.*
+
 
 
 ## License
