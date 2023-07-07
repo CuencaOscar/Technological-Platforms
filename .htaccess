@@ -1,0 +1,61 @@
+RewriteEngine On
+
+# Redireccionar /Platforms a la ruta específica del controlador para lectura
+RewriteRule ^Platforms$ /controllers/PlatformsController.php?action=read [L]
+
+# Redireccionar /CreatePlatform a la ruta específica del controlador para creación
+RewriteRule ^CreatePlatform$ /controllers/PlatformsController.php?action=create [L]
+
+# Redireccionar /UpdatePlatform a la ruta específica del controlador para actualización
+RewriteRule ^UpdatePlatform$ /controllers/PlatformsController.php?action=update [L]
+
+# Redireccionar /DeletePlatform a la ruta específica del controlador para eliminación
+RewriteRule ^DeletePlatform$ /controllers/PlatformsController.php?action=delete [L]
+
+# Redireccionar /Series a la ruta específica del controlador para lectura
+RewriteRule ^Series$ /controllers/SeriesController.php?action=read [L]
+
+# Redireccionar /CreateSeries a la ruta específica del controlador para creación
+RewriteRule ^CreateSeries$ /controllers/SeriesController.php?action=create [L]
+
+# Redireccionar /UpdateSeries a la ruta específica del controlador para actualización
+RewriteRule ^UpdateSeries$ /controllers/SeriesController.php?action=update [L]
+
+# Redireccionar /DeleteSeries a la ruta específica del controlador para eliminación
+RewriteRule ^DeleteSeries$ /controllers/SeriesController.php?action=delete [L]
+
+# Redireccionar /Actors a la ruta específica del controlador para lectura
+RewriteRule ^Actors$ /controllers/ActorsController.php?action=read [L]
+
+# Redireccionar /CreateActor a la ruta específica del controlador para creación
+RewriteRule ^CreateActor$ /controllers/ActorsController.php?action=create [L]
+
+# Redireccionar /UpdateActor a la ruta específica del controlador para actualización
+RewriteRule ^UpdateActor$ /controllers/ActorsController.php?action=update [L]
+
+# Redireccionar /DeleteActor a la ruta específica del controlador para eliminación
+RewriteRule ^DeleteActor$ /controllers/ActorsController.php?action=delete [L]
+
+# Redireccionar /Directors a la ruta específica del controlador para lectura
+RewriteRule ^Directors$ /controllers/DirectorsController.php?action=read [L]
+
+# Redireccionar /CreateDirector a la ruta específica del controlador para creación
+RewriteRule ^CreateDirector$ /controllers/DirectorsController.php?action=create [L]
+
+# Redireccionar /UpdateDirector a la ruta específica del controlador para actualización
+RewriteRule ^UpdateDirector$ /controllers/DirectorsController.php?action=update [L]
+
+# Redireccionar /DeleteDirector a la ruta específica del controlador para eliminación
+RewriteRule ^DeleteDirector$ /controllers/DirectorsController.php?action=delete [L]
+
+# Redireccionar /Languages a la ruta específica del controlador para lectura
+RewriteRule ^Languages$ /controllers/LanguagesController.php?action=read [L]
+
+# Redireccionar /CreateLanguage a la ruta específica del controlador para creación
+RewriteRule ^CreateLanguage$ /controllers/LanguagesController.php?action=create [L]
+
+# Redireccionar /UpdateLanguage a la ruta específica del controlador para actualización
+RewriteRule ^UpdateLanguage$ /controllers/LanguagesController.php?action=update [L]
+
+# Redireccionar /DeleteLanguage a la ruta específica del controlador para eliminación
+RewriteRule ^DeleteLanguage$ /controllers/LanguagesController.php?action=delete [L]
