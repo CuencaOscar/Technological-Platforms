@@ -55,7 +55,7 @@ class LanguagesController
 			if (
 				strlen($name) < 2 ||
 				strlen($name) > 20 ||
-				!preg_match('/^[A-Za-z0-9\s]+$/', $name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $name)
 			) {
 				array_push(
 					$errors,
@@ -115,7 +115,7 @@ class LanguagesController
 			if (
 				strlen($name) < 2 ||
 				strlen($name) > 20 ||
-				!preg_match('/^[A-Za-z0-9\s]+$/', $name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $name)
 			) {
 				array_push(
 					$errors,
@@ -148,7 +148,7 @@ class LanguagesController
 				exit();
 			} else {
 				$this->model->updateLanguage($data);
-				$_SESSION["message"] = "success";
+				$_SESSION["message"] = "success_update";
 				header("Location: /Languages");
 				exit();
 			}

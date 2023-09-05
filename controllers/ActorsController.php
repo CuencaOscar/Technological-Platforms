@@ -71,7 +71,7 @@ class ActorsController
 			if (
 				strlen($name) < 2 ||
 				strlen($name) > 20 ||
-				!preg_match('/^[A-Za-z0-9]+$/', $name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $name)
 			) {
 				array_push(
 					$errors,
@@ -82,7 +82,7 @@ class ActorsController
 			if (
 				strlen($last_name) < 2 ||
 				strlen($last_name) > 20 ||
-				!preg_match('/^[A-Za-z0-9]+$/', $last_name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $last_name)
 			) {
 				array_push(
 					$errors,
@@ -194,7 +194,7 @@ class ActorsController
 			if (
 				strlen($name) < 2 ||
 				strlen($name) > 20 ||
-				!preg_match('/^[A-Za-z0-9]+$/', $name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $name)
 			) {
 				array_push(
 					$errors,
@@ -205,7 +205,7 @@ class ActorsController
 			if (
 				strlen($last_name) < 2 ||
 				strlen($last_name) > 20 ||
-				!preg_match('/^[A-Za-z0-9]+$/', $last_name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $last_name)
 			) {
 				array_push(
 					$errors,
@@ -271,7 +271,7 @@ class ActorsController
 				exit();
 			} else {
 				$this->model->updateActor($data);
-				$_SESSION["message"] = "success";
+				$_SESSION["message"] = "success_update";
 				header("Location: /Actors");
 				exit();
 			}

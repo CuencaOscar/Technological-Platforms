@@ -71,7 +71,7 @@ class DirectorsController
 			if (
 				strlen($name) < 2 ||
 				strlen($name) > 20 ||
-				!preg_match('/^[A-Za-z0-9\s]+$/', $name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $name)
 			) {
 				array_push(
 					$errors,
@@ -82,7 +82,7 @@ class DirectorsController
 			if (
 				strlen($last_name) < 2 ||
 				strlen($last_name) > 20 ||
-				!preg_match('/^[A-Za-z0-9\s]+$/', $last_name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $last_name)
 			) {
 				array_push(
 					$errors,
@@ -119,7 +119,7 @@ class DirectorsController
 			if (
 				strlen($nationality) < 4 ||
 				strlen($nationality) > 20 ||
-				!preg_match('/^[A-Za-z0-9\s]+$/', $nationality)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $nationality)
 			) {
 				array_push(
 					$errors,
@@ -194,7 +194,7 @@ class DirectorsController
 			if (
 				strlen($name) < 2 ||
 				strlen($name) > 20 ||
-				!preg_match('/^[A-Za-z0-9]+$/', $name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $name)
 			) {
 				array_push(
 					$errors,
@@ -205,7 +205,7 @@ class DirectorsController
 			if (
 				strlen($last_name) < 2 ||
 				strlen($last_name) > 20 ||
-				!preg_match('/^[A-Za-z0-9]+$/', $last_name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $last_name)
 			) {
 				array_push(
 					$errors,
@@ -271,7 +271,7 @@ class DirectorsController
 				exit();
 			} else {
 				$this->model->updateDirector($data);
-				$_SESSION["message"] = "success";
+				$_SESSION["message"] = "success_update";
 				header("Location: /Directors");
 				exit();
 			}

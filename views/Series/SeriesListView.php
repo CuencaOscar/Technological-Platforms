@@ -216,9 +216,9 @@
   <input type="hidden" name="action" value="create">
     <div class="form-group">
       <label for="title">Title:</label>
-      <input type="text" name="title" pattern="[A-Za-z0-9\s]{2,49}" maxlength="50" id="name" class="form-control" required>
+      <input type="text" name="title" pattern="[A-Za-z0-9\s.]{2,49}" maxlength="50" id="name" class="form-control" required>
       <label for="description">Description:</label>
-      <input type="text" name="description" pattern="[A-Za-z0-9\s]{2,199}" maxlength="200" id="description" class="updateDescription form-control" required>
+      <input type="text" name="description" pattern="[A-Za-z0-9\s.]{2,199}" maxlength="200" id="description" class="updateDescription form-control" required>
     </div>
     <input type="hidden" name="workingValues" id="workingValues" value="">
     <button type="submit" class="btn btn-primary">Create Serie</button>
@@ -270,9 +270,9 @@
     <input type="hidden" name="action" value="update">
     <div class="form-group">
       <label for="updateTitle">Title:</label>
-      <input type="text" name="title" pattern="[A-Za-z0-9\s]{2,49}" maxlength="50" id="title" class="updateTitle form-control" required>
+      <input type="text" name="title" pattern="[A-Za-z0-9\s.]{2,49}" maxlength="50" id="title" class="updateTitle form-control" required>
       <label for="updateDescription">Description:</label>
-      <input type="text" name="description" pattern="[A-Za-z0-9\s]{2,199}" maxlength="200" id="description" class="updateDescription form-control" required>
+      <input type="text" name="description" pattern="[A-Za-z0-9\s.]{2,199}" maxlength="200" id="description" class="updateDescription form-control" required>
       <input type="hidden" id="id" name="id" value="">
     </div>
     <button class="btn btn-primary updateSerieBtn" data-id="<?php echo $serie['id']; ?>" data-title="<?php echo $serie['title']; ?>" data-description="<?php echo $serie['description']; ?>">Update Serie</button>
