@@ -257,7 +257,7 @@ $maxDate = $minAgeYear . '-'.date('m-d');
                       <input
                           type="text"
                           name="name"
-                          pattern="[A-Za-z0-9\s]{2,19}"
+                          pattern="[A-Za-z0-9\s.]{2,19}"
                           maxlength="20"
                           id="name"
                           class="updateName form-control"
@@ -267,7 +267,7 @@ $maxDate = $minAgeYear . '-'.date('m-d');
                       <input
                           type="text"
                           name="last_name"
-                          pattern="[A-Za-z0-9\s]{2,19}"
+                          pattern="[A-Za-z0-9\s.]{2,19}"
                           maxlength="20"
                           id="last_name"
                           class="updateLastName form-control"
@@ -285,7 +285,7 @@ $maxDate = $minAgeYear . '-'.date('m-d');
                       <input
                           type="text"
                           name="nationality"
-                          pattern="[A-Za-z0-9\s]{4,19}"
+                          pattern="[A-Za-z0-9\s.]{4,19}"
                           maxlength="20"
                           id="nationality"
                           class="updateNationality form-control"

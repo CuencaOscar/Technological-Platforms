@@ -57,7 +57,7 @@ class PlatformsController
 				empty($name) ||
 				strlen($name) < 2 ||
 				strlen($name) > 20 ||
-				!preg_match('/^[A-Za-z0-9\s]+$/', $name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $name)
 			) {
 				$_SESSION["message"] = "error";
 			} else {
@@ -92,16 +92,11 @@ class PlatformsController
 				header("Location: /Platforms");
 				exit();
 			}
-			if ($this->model->isNameExists($name)) {
-				$_SESSION["message"] = "error_update_duplicate";
-				header("Location: /Platforms");
-				exit();
-			}
 			if (
 				empty($name) ||
 				strlen($name) < 2 ||
 				strlen($name) > 20 ||
-				!preg_match('/^[A-Za-z0-9\s]+$/', $name)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $name)
 			) {
 				$_SESSION["message"] = "error_update";
 			} else {

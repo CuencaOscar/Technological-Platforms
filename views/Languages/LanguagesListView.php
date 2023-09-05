@@ -127,7 +127,7 @@
                         <input
                             type="text"
                             name="name"
-                            pattern="[A-Za-z0-9\s]{2,19}"
+                            pattern="[A-Za-z0-9\s.]{2,19}"
                             maxlength="20"
                             id="name"
                             class="form-control"
@@ -137,7 +137,7 @@
                         <input
                             type="text"
                             name="iso_code"
-                            pattern="[A-Za-z0-9\s]{,4}"
+                            pattern="[A-Za-z0-9\s.]{,4}"
                             maxlength="5"
                             id="iso_code"
                             class="updateISOCode form-control"
@@ -199,7 +199,7 @@
                         <input
                             type="text"
                             name="name"
-                            pattern="[A-Za-z0-9\s]{2,19}"
+                            pattern="[A-Za-z0-9\s.]{2,19}"
                             maxlength="20"
                             id="name"
                             class="updateName form-control"
@@ -209,7 +209,7 @@
                         <input
                             type="text"
                             name="iso_code"
-                            pattern="[A-Za-z0-9\s]{2,4}"
+                            pattern="[A-Za-z0-9\s.]{2,4}"
                             maxlength="5"
                             id="iso_code"
                             class="updateISOCode form-control"
@@ -413,7 +413,7 @@
                   messageText = 'Error creating language. Please try again.';
                   break;
                 case 'error_duplicate':
-                  messageText = 'The language name already exists. Create failed.';
+                  messageText = 'The language code already exists. Create failed.';
                   break;
                 case 'success_update':
                   messageText = 'Language updated successfully!';

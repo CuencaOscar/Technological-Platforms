@@ -125,7 +125,7 @@
                             <input
                                 type="text"
                                 name="name"
-                                pattern="[A-Za-z0-9\s]{2,19}"
+                                pattern="[A-Za-z0-9\s.]{2,19}"
                                 maxlength="20"
                                 id="name"
                                 class="form-control"
@@ -171,7 +171,7 @@
                         <input
                             type="text"
                             name="name"
-                            pattern="[A-Za-z0-9\s]{2,19}"
+                            pattern="[A-Za-z0-9\s.]{2,19}"
                             maxlength="20"
                             id="name"
                             class="updateName form-control"

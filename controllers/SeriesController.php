@@ -71,7 +71,7 @@ class SeriesController
 			if (
 				strlen($title) < 2 ||
 				strlen($title) > 50 ||
-				!preg_match('/^[A-Za-z0-9]+$/', $title)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $title)
 			) {
 				array_push(
 					$errors,
@@ -82,7 +82,7 @@ class SeriesController
 			if (
 				strlen($description) < 2 ||
 				strlen($description) > 200 ||
-				!preg_match('/^[A-Za-z0-9\s]+$/', $description)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $description)
 			) {
 				array_push(
 					$errors,
@@ -175,7 +175,7 @@ class SeriesController
 			if (
 				strlen($title) < 2 ||
 				strlen($title) > 50 ||
-				!preg_match('/^[A-Za-z0-9\s]+$/', $title)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $title)
 			) {
 				array_push(
 					$errors,
@@ -186,7 +186,7 @@ class SeriesController
 			if (
 				strlen($description) < 2 ||
 				strlen($description) > 200 ||
-				!preg_match('/^[A-Za-z0-9\s]+$/', $description)
+				!preg_match('/^[A-Za-z0-9\s.]+$/', $description)
 			) {
 				array_push(
 					$errors,
@@ -214,7 +214,7 @@ class SeriesController
 				exit();
 			} else {
 				$this->model->updateSerie($data, $dataRelations);
-				$_SESSION["message"] = "success";
+				$_SESSION["message"] = "success_update";
 				header("Location: /Series");
 				exit();
 			}
