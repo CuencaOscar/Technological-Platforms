@@ -9,7 +9,7 @@ Internacional de Valencia (VIU).
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
 
-![Homepage](image/homepage-screenshot.png)
+![Homepage](docs/homepage.png)
 
 ## Features
 
@@ -23,9 +23,9 @@ Internacional de Valencia (VIU).
 
 | Platforms | Series |
 |---|---|
-| ![Platforms](image/platformpage-screenshot.png) | ![Series](image/seriepage-screenshot.png) |
+| ![Platforms](docs/platformpage.png) | ![Series](docs/seriepage.png) |
 | **Directors** | **Actors** |
-| ![Directors](image/directorpage-screenshot.png) | ![Actors](image/actorpage-screenshot.png) |
+| ![Directors](docs/directorpage.png) | ![Actors](docs/actorpage.png) |
 
 ## Getting started
 
